@@ -1,8 +1,12 @@
 #include <stdio.h>
 
 void pswd(char* x){
-  while(x != '\0'){
-    if('a' < *x && *x < 'z' && 'A' < *x && *x < 'Z' && 1 < *x && *x < 9){
+  int count = 0;
+  while(x[count] != '\0'){
+    count++;
+  }
+  while(1){
+    if(count > 8 && 'a' < *x && *x < 'z' && 'A' < *x && *x < 'Z' && 1 < *x && *x < 9){
       break;
     }
   }
