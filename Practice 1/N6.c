@@ -3,7 +3,7 @@
 int main(){
   int x;
   while(1){
-    printf("10º¸´Ù Å©°í 100º¸´Ù ÀÛÀº Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+    printf("10ë³´ë‹¤ í¬ê³  100ë³´ë‹¤ ìž‘ì€ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì‹œì˜¤: ");
     scanf("%d", &x);
     if(10 < x && x < 100){
       break;
