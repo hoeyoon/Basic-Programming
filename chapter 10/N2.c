@@ -1,26 +1,40 @@
 #include <stdio.h>
 
-void pswd(char* x){
+int pswd(char* x){
+  int a = 0;
+  int b = 0;
+  int c = 0;
   int count = 0;
-  while(x[count] != '\0'){
+  while(*x != '\0'){
+    if('A' <= *x && *x <= 'Z'){
+      a++;
+    }
+    else if('a' <= *x && *x <= 'z'){
+      b++;
+    }
+    else if('0' <= *x && *x <= '9'){
+      c++;
+    }
+    x++;
     count++;
   }
-  while(1){
-    if(count > 8 && 'a' < *x && *x < 'z' && 'A' < *x && *x < 'Z' && 1 < *x && *x < 9){
-      break;
-    }
+  if(count >= 8 && a >= 1 && b >= 1 && c >= 1){
+    return 1;
+  }
+  else{
+    return 0;
   }
 }
 
-
 int main(){
-  char x[102];
-
+  char x[100];
   while(1){
     printf("Enter password: ");
     scanf("%s", x);
-    pswd(x);
+    if(pswd(x) == 1){
+      break;
+    }
   }
-
+  printf("New password is %s\n", x);
   return 0;
 }
