@@ -2,11 +2,11 @@
 
 int main(){
   float x;
-  printf("½Ç¼ö°ª ÀÔ·Â ");
+  printf("ì‹¤ìˆ˜ìˆ˜ê°’ ìž…ë ¥ ");
   scanf("%f", &x);
 
-  printf("¸ò %d\n", (int)x / 5);
-  printf("³ª¸ÓÁö %f\n", x - ((int)x / 5) * 5);
+  printf("ì •ìˆ˜ %d\n", (int)x / 5);
+  printf("ë‚˜ë¨¸ì§€ %f\n", x - ((int)x / 5) * 5);
 
   return 0;
 }
