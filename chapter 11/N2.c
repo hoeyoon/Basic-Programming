@@ -8,7 +8,7 @@ typedef struct{
 } employee;
 
 int main(){
-	employee a[10] = {};
+	employee a[10] = {{}, {}, {}, {}, {}, {}, {}, {}, {}, {}};
 	int x;
 	
 	
