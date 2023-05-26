@@ -12,26 +12,17 @@ int main(){
 	scanf("%d %d %d", &a.hour, &a.min, &a.sec);
 	scanf("%d %d %d", &b.hour, &b.min, &b.sec);
 	
-	if(a.hour > b.hour){
-		hour = a.hour - b.hour;
+	int a_sec = a.hour*3600 + a.min*60 + a.sec;
+	int b_sec = b.hour*3600 + b.min*60 + b.sec;
+
+	int sum = 0;
+	if(a_sec > b_sec){
+		sum = a_sec - b_sec;
 	}
 	else{
-		hour = b.hour - a.hour;
+		sum = b_sec - a_sec;
 	}
 	
-	if(a.min > b.min){
-		min = a.min - b.min;
-	}
-	else{
-		min = b.min - a.min;
-	}
-	
-	if(a.sec > b.sec){
-		sec = a.sec - b.sec;
-	}
-	else{
-		sec = b.sec - a.sec;
-	}
-	printf("%d %d %d\n", hour, min, sec);
+	printf("%d %d %d\n", sum/3600, (sum%3600)/60, (sum%3600)%60);
 	return 0;
 }
