@@ -13,12 +13,12 @@ complex_num addcomplex_num(complex_num a, complex_num b){
 }
 
 int main(){
-  complex_num x, y, sum = {0 , 0};
-  scanf("%lf+%lfi", &x.rnum, &x.inum);
-  scanf("%lf+%lfi", &y.rnum, &y.inum);
+  complex_num x, y;
+  scanf("%lf%lfi", &x.rnum, &x.inum);
+  scanf("%lf%lfi", &y.rnum, &y.inum);
 
-  sum = addcomplex_num(x, y);
+  complex_num z = addcomplex_num(x, y);
 
-  printf("%.2lf+%.2lfi\n", sum.rnum, sum.inum);
+  printf("%.2lf%+.2lfi\n", z.rnum, z.inum);
   return 0;
 }
