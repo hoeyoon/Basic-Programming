@@ -10,6 +10,7 @@ int main(){
   for(int i = 4; i >= 0; i--){
     printf("%d ", *(a+i));
   }
+  
   printf("\n");
   return 0;
 }
