@@ -8,7 +8,7 @@ int main(){
     scanf("%d", &n[i]);
   }
   for(int i = 0; i < 5; i++){
-    result+=n[i];
+    result+=*(n+i);
   }
   printf("%d\n", result);
   return 0;
