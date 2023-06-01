@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void swap(){}
-
 void sort_array(int* v, int n, int m){
   int temp;
   for(int i = 0 ; i < n; i++){
