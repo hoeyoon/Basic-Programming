@@ -5,15 +5,14 @@
 int* to_int_array(int* psize, char* x){
   int* r;
   r = (int*)malloc(strlen(x)*sizeof(int));
-  char* tok = strtok((char* x), " ");
+  char* tok = strtok((char*) x, " ");
 
   int count = 0;
 
   while(tok != '\0'){
-    if(x[i] == ' '){
-      r[count] = atoi(tok);
-      count++;
-    }
+    
+    r[count] = atoi(tok);
+    count++;
     tok = strtok('\0', " ");
   }
   *psize = count;
