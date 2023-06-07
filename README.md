@@ -27,5 +27,5 @@ OJ 문제 풀기
   + [<1>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%201/N1.c)[<2>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%201/N2.c)[<3>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%201/N3.c)[<4>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%201/N4.c)[<5>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%201/N5.c)[<6>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%201/N6.c)
 + 연습 문제 2 ✅️
   + [<1>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%202/N1.c)[<2>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%202/N2.c)[<3>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%202/N3.c)[<4>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%202/N4.c)[<5>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%202/N5.c)
-+ 연습 문제 3 하는중...
++ 연습 문제 3 하는중...(개어려움)
   + [<1>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%203/N1.c)[<2>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%203/N2.c)[<3>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%203/N3.c)[<4>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%203/N4.c)[<5>](https://github.com/hoeyoon/OJ-Problem/blob/master/Practice%203/N5.c)
