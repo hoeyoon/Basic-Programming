@@ -3,12 +3,34 @@
 #include <string.h>
 
 char* to_str(int* size, unsigned int* a){
-  char* r;
-  r = (char*)malloc((char*)a*sizeof(char));
+  int len = 0;
+
   for(int i = 0; i < 3; i++){
-    
+    unsigned int temp = a[i];
+    int digits = 1;
+
+    while(temp /= 10){
+      digits++;
+    }
+
+    len += digits;
+    if(i < 2){
+      len++;
+    }
   }
-  
+  char* r = (char*)malloc((len+1)*sizeof(char));
+  int index = 0;
+
+  for(int i = 0; i < 3; i++){
+    int digits = snprintf('\0', 0, "%u", a[i]);
+    sprintf(r+index, "%u", a[i]);
+    index+=digits;
+    if(i < 2){
+      sprintf(r+index, " ");
+      index++;
+    }
+  }
+  *size = index;
   return r;
 }
 
