@@ -13,24 +13,15 @@ void reverse(char* a){
   *(a+len) = '\0'; 
 } 
   
-void change_string(char* a, char* b){ 
-  int len = b - a + 1;
-
-  char output[128]; 
-  printf("move = [%c]\n", *b); 
-  for(int i = 0; i < len; i++){
-    output[i] = *(a + i);
-  }
-  for(int i = 0; i < len; i++){
-    *(a + i) = *(b + 1 + i);
-  }
-  for(int i = 0; i < len; i++){
-    *(b - len + 1 +i) = output[i];
-  }
-  
-  //printf("%s 1\n", output); 
-} 
-  
+void change_string(char* ptr, char* str){
+   printf("move = [%c]\n", *(str));
+  char a[512];
+  *a = *str;
+   for(int i = 0; i <= &str[0]-&ptr[0]; i++){
+    *(str-i) = *(str-i-1);
+   }
+  *ptr = *a;
+}  
   
 int main(){ 
   char in[128]; 
