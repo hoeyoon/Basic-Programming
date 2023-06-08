@@ -25,5 +25,6 @@ int main(){
 		}
 	}
 	printf("%d number of %d\n", count, find_num);
+	free(iptr);
 	return 0;
 }
