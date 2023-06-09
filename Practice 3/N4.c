@@ -20,12 +20,28 @@ void get_str_array(char *istr,char year[], char mouth[], char day[]){
         year[i] = istr[i];
       }
     }
-    else{
+    else if(chek[0] == 3){
       if(istr[i] < '0' || istr[i] > '9'){
         year[i] = '0';
       }
       else{
         year[i + 1] = istr[i];
+      }
+    }
+    else if(chek[0] == 2){
+      if(istr[i] < '0' || istr[i] > '9'){
+        year[i] = '0';
+      }
+      else{
+        year[i + 2] = istr[i];
+      }
+    }
+    else if(chek[0] == 1){
+      if(istr[i] < '0' || istr[i] > '9'){
+        year[i] = '0';
+      }
+      else{
+        year[i + 3] = istr[i];
       }
     }
   }
