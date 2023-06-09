@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void get_str_array(char *istr,char year[], char mouth[], char day[]){
+void get_str_array(char *istr,char year[], char month[], char day[]){
   int i = 0, j = 0, t = 0;
   int chek[3] = { 0, };
   while(j < 3){
@@ -47,13 +47,13 @@ void get_str_array(char *istr,char year[], char mouth[], char day[]){
   }
   j = 1;
   for(int i = chek[1] - 1; i > chek[0]; i--){
-    mouth[j] = istr[i];
+    month[j] = istr[i];
     if (istr[i] < '0' || istr[i] > '9'){
-      mouth[j] = '0';
+      month[j] = '0';
       j--;
     }
     else{
-      mouth[j] = istr[i];
+      month[j] = istr[i];
       j--;
     }
   }
@@ -75,9 +75,9 @@ int main(void)
    char istr[512];
    scanf("%[^\n]s", istr);
    char year[5] = "0000";
-   char mouth[3] = "00";
+   char month[3] = "00";
    char day[3] = "00";
-   get_str_array(&istr, &year, &mouth, &day);
+   get_str_array(istr, year, month, day);
 
-   printf("%s.%s.%s\n", year, mouth, day);
+   printf("%s.%s.%s\n", year, month, day);
 }
