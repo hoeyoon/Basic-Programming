@@ -5,7 +5,7 @@
 int* to_int_array(int* psize, char* x){
   int* r;
   r = (int*)malloc(strlen(x)*sizeof(int));
-  char* tok = strtok((char*) x, " ");
+  char* tok = strtok(x, " ");
 
   int count = 0;
 
