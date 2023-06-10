@@ -2,14 +2,15 @@
 
 int main(){
   int n[5];
-  int result = 0;
-
+  int* pt = n;
   for(int i = 0; i < 5; i++){
     scanf("%d", &n[i]);
   }
+  int sum = 0;
   for(int i = 0; i < 5; i++){
-    result+=*(n+i);
+    sum+=*(pt+i); 
   }
-  printf("%d\n", result);
+  printf("%d\n", sum);
+  
   return 0;
 }
